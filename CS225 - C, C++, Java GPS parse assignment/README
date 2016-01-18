@@ -1,0 +1,33 @@
+CS22510 - C, C++ and Java Programming Paradigms
+Martin Zokov - mvz
+
+This README file is to describe the contents of my submission for Assignment 1.
+There are three main directories:
+/C/ -- Contains the C implementation of the task
+/C++/ -- Contains the C++ implementation of the task
+/Java/ -- Contains the Java implementation of the task
+
+For the C version the source files are as follows:
+/C/main.c
+/C/stream_handler.h
+/C/stream_handler.c
+/C/linked_list.c
+
+In order to compile successfully, the Mathemathics standard library should be included.
+
+For the C++ version the source files are as follows:
+/C++/main.cpp
+/C++/Reader.h
+/C++/Reader.cpp
+/C++/StreamHandler.h
+/C++/StreamHandler.cpp
+/C++/Location.h
+/C++/Location.cpp
+
+For the Java version the source files are as follows:
+/Java/src/cs225/assignment/Main.java
+/Java/src/cs225/assignment/Reader.java
+/Java/src/cs225/assignment/StreamHandler.java
+/Java/src/cs225/assignment/Location.java
+
+The Java implementation was created and built as an Eclipse project.
