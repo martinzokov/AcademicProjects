@@ -1,0 +1,10 @@
+﻿
+Configuration Reference File for Group 07
+
+Quality Manager:  Ryan Gouldsmith, email: ryg1@aber.ac.uk
+
+Reference		Config Item Status	Description
+SE_O7_SE_DS_01		Release v2.4		Design Specification
+SE_07_TEST_01		Release v2.5		Test Specification
+SE_07_G_01		Release v1.0		Git User Guide
+SE_07_PM_01		Release v1.9		Project Plan			

@@ -1,0 +1,95 @@
+html, body {
+        /*background-color:#E8e8e8;*/
+
+        /*background-image: url('Background.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;*/
+        height:200px;
+        background: -webkit-linear-gradient(left, black , grey);		 /* For Safari */
+		background: -o-linear-gradient(right, black, grey); 			 /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(right, black, grey); 		     /* For Firefox 3.6 to 15 */
+		background: linear-gradient(to right, black, grey); 			 /* Standard syntax */
+        }
+
+
+/**
+*	Makes header right align 
+*	Black border with white text 
+*/
+header{
+        text-align: right;
+        font-family: Arial, Geneva, sans-serif;
+        font-size: 20px;
+        color: white; 
+        /*background-image: url('Aber.jpg');*/
+        margin-right: 10px;        
+        border-bottom: 2px dashed green;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+/**
+*	Font, Font size and 
+*	shadow for the menu
+*/
+
+nav {
+    font-size: 22px;
+    font-family:  Arial, Geneva, sans-serif;
+    text-shadow: 3px 2px 3px grey;   
+}
+
+/**
+*	Gives menu padding
+*	and margin from window
+*/
+
+nav ul {
+    height: auto;
+    padding:  8px 10px;
+    margin: 0px;
+    list-style-type: none;
+    }
+    
+/**
+*	Gives menu padding and 
+*	margin from entries in list
+*/    
+
+nav li { 
+        padding: 5px; 
+         margin: 0 0.15em;
+}
+
+
+/**
+*	Gives menu colour to font 
+*	and text decoration
+*/
+
+nav a {
+        display: block;
+  	    font-size: 80%;
+        border-bottom: 1px dashed green;
+        padding: 5px 0px 2px 4px;
+        text-decoration: none;
+        width:160px;
+    	color: white;
+}
+
+/*
+*	Gives menu colour when you 
+*	hoover over selected item
+*/
+nav a:hover {
+    color: green;
+    /*background-color: black;*/
+}
+
+#homeImage {
+	margin-left: 25%;
+	margin-right: 25%;
+	color: white;
+	font-size: 20px;
+	padding: 10px	;
+}​

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WalkTourCreator</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_main_menu">MainMenu</string>
+    <string name="title_activity_map_screen">MapScreen</string>
+    <string name="title_activity_walk_setup_screen">WalkSetupScreen</string>
+
+    <!-- General Values -->
+    <string name="cancel">Go Back</string>
+    <string name="delete">Delete Walk</string>
+    <string name="open">Open Walk</string>
+    <string name="submit">Submit</string>
+
+    <!-- Start Screen values -->
+    <string name="welcome_message">Welcome to Walk creator</string>
+    <string name="brief_credits">Created by Group 7</string>
+    <string name="instructions">tap screen to continue</string>
+
+    <!-- Main Menu values -->
+    <string name="start_new_walk">Start Walk!</string>
+    <string name="open_options_screen">Options</string>
+    <string name="view_previous_walks">My Walks</string>
+    <string name="open_login_screen">Login</string>
+
+    <!-- MapScreen values -->
+    <string name="add_point_of_interest">Add POI</string>
+    <string name="options_popup">Options</string>
+    <string name="play_pause">Finish</string>
+    
+    <!-- Walk set up -->
+    <string name="title">Title</string>
+    <string name="long_description">Detailed Description</string>
+    <string name="short_description">Description</string>
+    <string name="poi_take_photo">Take photo</string>
+    <string name="poi_open_gallery">Open Gallery</string>
+    <string name="poi_edit_title_field">Enter Title</string>
+    <string name="poi_enter_description_field">Enter Description</string>
+    <string name="walk_screen_edit_walk">Edit Walk</string>
+    <string name="walk_screen_cancel">Cancel Walk</string>
+    <string name="edit_walk_title">Edit title of walk</string>
+    <string name="edit_walk_description">Edit short description</string>
+    <string name="edit_walk_long_description">Edit long description</string>
+
+</resources>
