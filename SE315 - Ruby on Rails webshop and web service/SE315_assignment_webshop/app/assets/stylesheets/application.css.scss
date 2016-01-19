@@ -1,0 +1,87 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body {
+  margin: 0 ;
+
+  .notice{
+    color: #45b103;
+  }
+
+  #header {
+    height: 120px;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffdbdb+0,ffdbdb+100 */
+    background-color: #9E7878;
+
+    #logo {
+
+      margin: 0 auto;
+      width: 70%;
+      img{
+        float: left;
+      }
+    }
+  }
+
+  #navigation {
+    overflow: hidden;
+    padding: 10px 30px 10px 30px;
+    background-color: #AC9898;
+    #navigation_content{
+      margin: 0 auto;
+      width: 70%;
+
+      #userinfo{
+        float:right;
+        padding-top:13px;
+        padding-bottom: 13px;
+        a {
+          text-decoration: none;
+          color: #4d0202;
+        }
+        a:hover{
+          background: transparent;
+          text-decoration: underline;
+        }
+      }
+      #buttons{
+        float:left;
+        ul {
+          padding: 0;
+          list-style-type: none;
+          li {
+            display: inline;
+            margin-right: 20px;
+            a {
+              text-decoration: none;
+              color: #4d0202;
+            }
+            a:hover {
+              background: transparent;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+
+    #main_content {
+      background-color: #FFFDFD;
+      margin: 0 auto;
+      width: 70%;
+    }
+}

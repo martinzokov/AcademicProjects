@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+order_one:
+  name: TestName1
+  address: Aberystwyth
+  email: hello@aber.ac.uk
+
+order_two:
+  name: TestName2
+  address: London
+  email: london@mail.com

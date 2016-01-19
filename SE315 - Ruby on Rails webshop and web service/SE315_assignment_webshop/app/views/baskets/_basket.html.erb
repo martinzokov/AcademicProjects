@@ -1,0 +1,21 @@
+
+<div class="basket_title">Your Basket
+<% if basket.line_items.empty? %>
+  is empty
+  <% end %>
+</div>
+
+
+<table>
+  <%= render(basket.line_items) %>
+
+  <tr class="order_total">
+    <td colspan="2">Total:</td>
+    <td class="order_sum"><%= number_to_currency(basket.total_price, unit: '£')%></td>
+  </tr>
+</table>
+
+
+<%= button_to "Checkout", new_order_path, method: :get %>
+<%= button_to 'Empty basket', basket, method: :delete, remote: true %>
+

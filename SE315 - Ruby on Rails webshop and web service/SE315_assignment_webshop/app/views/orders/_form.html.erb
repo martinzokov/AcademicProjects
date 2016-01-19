@@ -1,0 +1,46 @@
+<%= form_for(@order) do |f| %>
+  <% if @order.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@order.errors.count, "error") %> prohibited this order from being saved:</h2>
+
+      <ul>
+      <% @order.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <% if user_signed_in? %>
+    <%= f.text_field :name, size: 50, value: current_user.name %>
+        <% else %>
+        <%= f.text_field :name, size: 50%>
+    <% end %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br>
+    <% if user_signed_in? %>
+        <%= f.text_area :address, rows: 4, cols: 40, value: current_user.address %>
+    <% else %>
+    <%= f.text_area :address, rows: 4, cols: 40 %>
+    <% end %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <% if user_signed_in? %>
+        <%= f.text_field :email, size: 50, value: current_user.email %>
+    <% else %>
+    <%= f.text_field :email, size: 50 %>
+    <% end %>
+  </div>
+  <div class="actions">
+    <%= f.submit 'Place Order'%>
+  </div>
+
+<% end %>
+<div id="basket">
+  <%= render @basket %>
+</div>
+

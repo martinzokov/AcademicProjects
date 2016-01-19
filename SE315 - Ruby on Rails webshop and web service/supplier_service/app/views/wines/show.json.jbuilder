@@ -1,0 +1,1 @@
+json.extract! @wine, :id, :productName, :longDesc, :origin, :grapeType, :vegetarian, :bottleSize, :supplier, :price, :updated_at

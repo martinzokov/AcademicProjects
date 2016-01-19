@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+line_item_one:
+  wine_id: red_wine
+  basket_id: 1
+
+line_item_two:
+  wine_id: white_wine
+  basket_id: 2

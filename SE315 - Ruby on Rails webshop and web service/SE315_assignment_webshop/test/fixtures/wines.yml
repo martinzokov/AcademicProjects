@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+red_wine:
+  id: 1
+  productName: RedWineTest
+  longDesc: TastyRedWine
+  origin: Italy
+  grapeType: RedGrape
+  vegetarian: false
+  bottleSize: 1000
+  supplier: DistastefulNonAlcoholicWine co.
+  price: 9.99
+  image_url: wine.png
+
+white_wine:
+  id: 2
+  productName: WhiteWineTest
+  longDesc: TastyWhiteWine
+  origin: France
+  grapeType: WhiteGrape
+  vegetarian: true
+  bottleSize: 750
+  supplier: NobodyLikesWineWithoutAlcohol ltd.
+  price: 19.99
+  image_url: wines.gif

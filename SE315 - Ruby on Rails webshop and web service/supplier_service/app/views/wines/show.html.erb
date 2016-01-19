@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<%= @wine.productName %>
+ <%= @wine.longDesc%>
+ <%= @wine.origin %>
+ <%= @wine.grapeType %>
+ <%= @wine.vegetarian %>
+ <%= @wine.supplier %>
+<%= @wine.price %>
+
+<%= link_to 'Edit', edit_wine_path(@wine) %> |
+<%= link_to 'Back', wines_path %>

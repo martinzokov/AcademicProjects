@@ -1,0 +1,58 @@
+
+<h1>Our wine selection</h1>
+
+<% if @wines.length > 0 %>
+    <%= form_tag(search_wines_path,method: :get, id: "Search") do %>
+        <fieldset>
+          <%= text_field_tag(:query) %>
+          <%=submit_tag("Search") %>
+        </fieldset>
+
+    <% end %>
+<% end %>
+
+<div class="wine_list">
+<table>
+
+  <tbody>
+    <% @wines.each do |wine| %>
+      <div class="wine_item">
+
+        <div class="wine_image">
+          <%= link_to image_tag(wine.image_url), wine %>
+        </div>
+
+        <div class="wine_info_wrapper">
+          <div class="wine_product_name">
+            <h3><%= link_to wine.productName, wine %></h3>
+          </div>
+
+          <div class="wine_description">
+            <%= sanitize(wine.longDesc) %><br>
+            Bottle size (ml): <%= wine.bottleSize %><br>
+            Supplier: <%= wine.supplier %>
+          </div>
+
+
+          <div class="price_tag">
+            <span class="price">Price: <%= number_to_currency(wine.price, unit: '£') %></span>
+          </div>
+
+        </div>
+
+      </div>
+    <% end %>
+  </tbody>
+</table>
+
+  <p><%= will_paginate @wines %></p>
+</div>
+
+<%= hidden_div_if(@basket.line_items.empty?, id: 'basket') do %>
+  <%= render @basket %>
+<% end %>
+
+<br>
+
+
+

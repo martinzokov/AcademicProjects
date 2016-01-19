@@ -1,0 +1,8 @@
+$("#notice").hide();
+
+$('#basket').html("<%=j render @basket %>");
+
+if ($('#basket tr').length == 1) {$('#basket').show('blind',1000);}
+
+$('#current_item').css({'background-color':'#AC9898'}).animate({'background-color':'transparent'},1000);
+

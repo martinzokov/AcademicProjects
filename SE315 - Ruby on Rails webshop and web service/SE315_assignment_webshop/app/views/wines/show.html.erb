@@ -1,0 +1,66 @@
+<div class="columns">
+<p id="notice"><%= notice %></p>
+
+  <h1><%= @wine.productName %></h1>
+<div class="wine_information">
+<div class="wine_information_image">
+  <%= image_tag(@wine.image_url) %>
+</div>
+  <div class="wine_information_text">
+  <p>
+  <%= @wine.longDesc %>
+</p>
+
+
+<p>
+  <ul>
+    <li><strong>Origin:</strong>
+      <%= @wine.origin %></li>
+    <li><strong>Grapetype:</strong>
+      <%= @wine.grapeType %></li>
+    <li>  <strong>Vegetarian:</strong>
+      <% if(@wine.vegetarian)%>
+        Yes
+          <%else%>
+        No
+      <%end%>
+    </li>
+    <li>  <strong>Bottlesize: </strong>
+      <%= @wine.bottleSize %> (ml)</li>
+    <li>  <strong>Supplier:</strong>
+      <%= @wine.supplier %></li>
+  </ul>
+
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= number_to_currency(@wine.price, unit: '£')%>
+
+  <%= form_for @line_item, remote: true do |f| %>
+        <div class="field">
+          <%= f.hidden_field :wine_id, value: @wine.id %>
+        </div>
+
+        <div class="field">
+          <%= f.label :quantity %><br>
+          <%= f.number_field :quantity, min: 1, max: 30 %>
+        </div>
+
+        <div class="actions">
+          <%= f.submit 'Add to Basket', remote: true%>
+        </div>
+    <% end %>
+
+</p>
+    <%= link_to 'Back', wines_path %>
+</div>
+
+</div>
+
+<div id="basket">
+  <%= render @basket %>
+</div>
+
+
+</div>

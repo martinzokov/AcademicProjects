@@ -1,0 +1,88 @@
+// Place all the styles related to the Wines controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.wines {
+  h1 {
+    margin: 0;
+    padding-bottom: 0.5em;
+    font: 150% sans-serif;
+    color: #9E7878;
+    border-bottom: 3px solid #4d0202;
+  }
+
+  .wine_list{
+    float: left;
+    width: 60%;
+  }
+
+  .wine_item {
+    overflow: auto;
+    margin-top: 1em;
+    border-bottom: 1px solid #9E7878;
+    min-height: 102px;
+
+    .wine_image {
+      width: 100px;
+      margin-right: 15px;
+      margin-bottom: 5px;
+      position: absolute;
+      img{
+        max-height: 100px;
+        max-width: 100px;
+      }
+    }
+
+    .wine_info_wrapper{
+      padding-left: 130px;
+
+      .wine_product_name {
+        h3 {
+          a {
+            text-decoration: none;
+            background: transparent;
+            font-size: 100%;
+            font-family: Arial;
+            margin-top: 0;
+            margin-bottom: 2px;
+            color: #4d0202;
+          }
+        }
+      }
+
+      .price_tag{
+        color: #9E7878;
+        font-weight: bold;
+        margin-right: 3em;
+      }
+    }
+
+
+    p, div.price_line {
+      margin-left: 100px;
+      margin-top: 0.5em;
+      margin-bottom: 0.8em;
+    }
+  }
+  .price {
+
+  }
+
+  .wine_information{
+    background-color: #FFFDFD;
+    float:left;
+    width: 60%;
+
+    .wine_information_image{
+      max-height: 200px;
+      max-width: 200px;
+      margin-right: 15px;
+      margin-bottom: 5px;
+      float: left;
+    }
+    .wine_information_text{
+      float: left;
+    }
+  }
+
+}
