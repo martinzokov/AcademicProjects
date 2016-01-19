@@ -1,5 +1,6 @@
 CS22510 - C, C++ and Java Programming Paradigms
 Martin Zokov - mvz
+An application for parsing GPS data in NMEA format.
 
 This README file is to describe the contents of my submission for Assignment 1.
 There are three main directories:
